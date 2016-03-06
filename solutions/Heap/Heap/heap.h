@@ -19,4 +19,4 @@ class heap {
   void swap(int i, int p);
 };
 
-#endif // SOLUTIONS_HEAP_HEAP_HEAP_H_
+#endif  //  SOLUTIONS_HEAP_HEAP_HEAP_H_
