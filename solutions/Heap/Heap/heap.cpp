@@ -58,12 +58,6 @@ void heap::hilling() {
   }
 }
 
-void heap::print() {
-  for (int i = 0; i < n; i++)
-    printf("%i ", arr[i]);
-  printf("\n");
-}
-
 void heap::insert(int key) {
   if (n == size)
     throw "heap is full";

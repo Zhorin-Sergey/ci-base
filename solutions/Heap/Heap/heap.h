@@ -1,23 +1,22 @@
-#include <stdio.h>
-#include <iostream>
-
-using namespace std;
+#ifndef SOLUTIONS_HEAP_HEAP_HEAP_H_
+#define SOLUTIONS_HEAP_HEAP_HEAP_H_
 
 class heap {
-  private:
-    int size;
-    int d;
-    int* arr;
-    int n;
-  public:
-    int min_child(int i);
-    void up(int i);
-    void down(int i);
-    heap(int _size, int _d);
-    ~heap();
-    void hilling();
-    void print();
-    void insert(int key);
-    int deletemin();
-    void swap(int i, int p);
+ private:
+   int size;
+   int d;
+   int* arr;
+   int n;
+ public:
+   int min_child(int i);
+   void up(int i);
+   void down(int i);
+   heap(int _size, int _d);
+   ~heap();
+   void hilling();
+   void insert(int key);
+   int deletemin();
+   void swap(int i, int p);
 };
+
+#endif // SOLUTIONS_HEAP_HEAP_HEAP_H_
